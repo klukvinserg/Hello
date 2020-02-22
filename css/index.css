@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    width: 1000px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.main-class {
+    position: relative;
+}
+
+.calc {
+    height: 150px;
+    left: -60px;
+    top: 84vh;
+    animation: animation-calc 2s linear; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.book {
+    height: 200px;
+    left: -40px;
+    top: 90vh;
+    animation: animation-book 2s linear; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+}
+
+.paper {
+    height: 200px;
+    left: 40px;
+    top: 90vh;
+    animation: animation-paper 2s linear; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+.pallete {
+    height: 150px;
+    left: 60px;
+    top: 84vh;
+    animation: animation-pallete 2s linear; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1.5s;
+}
+
+.pencil {
+    height: 150px;
+    transform: rotate(90deg);
+    left: 0px;
+    top: 60vh;
+    animation: animation-pencil 2s linear; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+
+
+@keyframes animation-calc {
+    100% {
+        transform: translate(0px, -60vh) rotate(-45deg);
+    }
+}
+
+@keyframes animation-book {
+    100% {
+        transform: translate(0px, -75vh) rotate(-20deg);
+    }
+}
+
+@keyframes animation-paper {
+    100% {
+        transform: translate(0px, -75vh) rotate(20deg);
+    }
+}
+
+@keyframes animation-pallete {
+    100% {
+        transform: translate(0px, -60vh) rotate(45deg);
+    }
+}
+
+@keyframes animation-pencil {
+    100% {
+        transform: translate(0px, -40vh) rotate(90deg);
+    }
+}
